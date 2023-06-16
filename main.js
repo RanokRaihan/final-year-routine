@@ -10,10 +10,11 @@ setInterval(() => {
     //
     const child = `<div class="single-subject">
     <div class="subject-details">
-      <div>${getFullDate(sub.date)}</div>
-      <div>${getDay(sub.date)}</div>
-      <div>${sub.subject}</div>
-      <div>${sub.subjectCode}</div>
+      <div><p>${sub.subject}</p></div>
+      <div><p>${sub.subjectCode}</p></div>
+      <div> <p>${getFullDate(sub.date)}</p></div>
+      <div><p>${getDay(sub.date)}</p></div>
+      
     </div>
     <div class="timer">${getRemainingTime(sub.date)}</div>
   </div>`;

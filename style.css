@@ -16,7 +16,12 @@ body {
   text-align: center;
   margin-block: 3rem;
 }
-
+.header > h1 {
+  margin-block: 1rem;
+}
+.header > h2 {
+  font-weight: 400;
+}
 #root {
   display: flex;
   flex-direction: column;
@@ -29,6 +34,7 @@ body {
   padding: 1rem;
   border: 2px solid #012242;
   margin-block: 1rem;
+  border-radius: 10px;
 }
 .subject-details {
   display: grid;
@@ -47,6 +53,13 @@ body {
   text-align: center;
   padding: 0.8rem 1rem;
   background-color: #012242;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.subject-details > div:first-child {
+  border: 1px solid rgb(217, 255, 0);
 }
 
 .timer {
