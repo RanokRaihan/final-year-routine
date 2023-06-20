@@ -18,7 +18,7 @@ export const getRemainingTime = (date) => {
   const targetTime = new Date(date).getTime();
   const remainingTime = targetTime - currentTime;
   if (remainingTime <= 0) {
-    return 0;
+    return "Time up";
   }
   let seconds = Math.floor(remainingTime / 1000);
   let minutes = Math.floor(seconds / 60);
